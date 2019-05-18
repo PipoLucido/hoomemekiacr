@@ -1,0 +1,132 @@
+body{
+    margin :0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*///////////////////////-HEADER-///////////////////////*/
+
+#header{
+    position: fixed;
+    border-bottom-style: solid;
+    border-width: 0.04px;
+    border-bottom-color: white;
+    width: 100%;
+    height: 75px;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100%, auto) ;
+    z-index: 99999999;
+    background: rgba(194,194,194,1);
+background: -moz-linear-gradient(top, rgba(194,194,194,1) 0%, rgba(246,246,246,0.52) 53%, rgba(255,255,255,0.1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(194,194,194,1)), color-stop(53%, rgba(246,246,246,0.52)), color-stop(100%, rgba(255,255,255,0.1)));
+background: -webkit-linear-gradient(top, rgba(194,194,194,1) 0%, rgba(246,246,246,0.52) 53%, rgba(255,255,255,0.1) 100%);
+background: -o-linear-gradient(top, rgba(194,194,194,1) 0%, rgba(246,246,246,0.52) 53%, rgba(255,255,255,0.1) 100%);
+background: -ms-linear-gradient(top, rgba(194,194,194,1) 0%, rgba(246,246,246,0.52) 53%, rgba(255,255,255,0.1) 100%);
+background: linear-gradient(to bottom, rgba(194,194,194,1) 0%, rgba(246,246,246,0.52) 53%, rgba(255,255,255,0.1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', endColorstr='#ffffff', GradientType=0 );
+}
+
+.logoAcri{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+}
+
+.logoAcri img{
+    width: 110px;
+}
+
+.logoMeki{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.logoMeki img{
+    width: 170px;
+}
+
+/*///////////////////////-HEADER-END///////////////////////*/
+
+/*///////////////////////-HOME-///////////////////////*/
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100%, auto) ;
+}
+
+#acrilaser{
+    background-image: url('./img/background-acrilaser.png');
+    background-position-y: -70px;
+    background-size: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right-style: solid;
+    border-right-color: black;
+    border-right-width: 1.2px;
+    height: 650px;
+}
+
+#meki{
+    background-image: url('./img/background-meki.png');
+    background-size: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 1.2px;
+    height: 650px;
+}
+
+#acrilaser:hover{
+    cursor: pointer;
+    -webkit-animation: zoom-in-out 1s forwards ;
+ animation: zoom-in-out 1s forwards ;
+}
+
+#meki:hover{
+    cursor: pointer;
+    -webkit-animation: zoom-in-out 1s forwards ;
+ animation: zoom-in-out 1s forwards ;
+    
+}
+
+/*///////////////////////-HOME-END///////////////////////*/
+
+/*//////////////////////KEYFRAMES/////////////////////////////*/
+
+@-webkit-keyframes zoom-in-out {
+    0%{
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+   
+    100%{
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes zoom-in-out {
+    0%{
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    100%{
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  /*//////////////////////KEYFRAMES-END/////////////////////////////*/
