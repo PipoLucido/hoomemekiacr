@@ -21,13 +21,28 @@
     </div>
 
     <div id="container">
-        <div id="acrilaser">
+        <div onclick="to('acri')" id="acrilaser">
           
         </div>
-        <div id="meki">
+        <div onclick="to('meki')" id="meki">
           
         </div>
     </div>
+
+<script>
+
+    function to(which){
+
+        if(which === "meki"){
+            window.open("http://192.168.0.10/meki-Eshop");
+        }
+
+        if(which === "acri"){
+            window.open("http://192.168.0.10/acrilaser");
+        }
+    }
+
+</script>
 
 </body>
 </html>
