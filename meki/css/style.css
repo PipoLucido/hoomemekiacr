@@ -117,7 +117,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mercadopagoLogo {
-    width: 700px;
+    width: 500px;
 }
 
 #dudaCuotaCamion {
@@ -151,7 +151,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .truck img {
-    width: 90px;
+    width: 70px;
     margin-top: 15px;
 }
 
@@ -161,6 +161,10 @@ body::-webkit-scrollbar-thumb {
 
 .redFontcolor {
     color: #ff4d4d;
+}
+
+.tarjet p {
+    font-weight: bold;
 }
 
 
