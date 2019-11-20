@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     background-image: url('./img/fondoHome.jpg');
     /* filter: grayscale(90%);*/
-    background-position-y: -90px;
+    background-position-y: -280px;
     background-size: 1800px;
 }
 
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 15px;
     display: grid;
     font-family: 'Roboto', sans-serif;
-    grid-template-columns: 1fr 1fr 1fr 8fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 7fr;
     grid-template-rows: minmax(50px, auto);
 }
 
